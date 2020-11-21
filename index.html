@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PWAConf</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="icon" type="image/png" href="./img/icons/favicon.png" />
+
+    <meta name="theme-color" content="#2A3443" />
+    <meta
+      name="description"
+      content="PWA Tutorial Application for a fictional conference."
+    />
+
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="./img/icons/icon-144x144.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-title" content="PWAConf" />
+    
+    <link rel="manifest" href="./manifest.json">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type = "text/javascript"></script>
+  <script>
+    $(document).ready(function(){
+
+      $("input").focus(function(){
+        $(this).css("background-color", "gray");
+      });
+      $("input").blur(function(){
+        $(this).css("background-color", "#C4E2FF");
+      });
+    });
+    $(document).ready(function(){
+
+       $("p2").hide();  
+       $("ul2").hide(); 
+       $("p1").hide();  
+       $("ul1").hide(); 
+       $("p3").hide();  
+       $("ul3").hide(); 
+      $("BUTTON3").click(function(){
+        $("p1").toggle();
+        $("ul1").toggle();
+      });
+      $("BUTTON1").click(function(){
+        $("p2").toggle();
+        $("ul2").toggle();
+      });
+      $("BUTTON2").click(function(){
+        $("p3").toggle();
+        $("ul3").toggle();
+      });
+    });
+    $(function() {
+    $('#gotop').click(function(){
+        $('html,body').animate({ scrollTop: 0 }, 'slow');   //
+        return false;
+    })
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 0){
+            $('#gotop').fadeIn();
+        } else {
+            $('#gotop').fadeOut();
+        }
+      });
+  });
+  </script>
+  </head>
+
+  <body bgcolor = "black" background="https://i.imgur.com/8DApZni.gif" text="#FFFFFF" link="#0066cc" vlink="#336600" class="pe">
+
+    <a href="https://www.blogger.com/blogger.g?blogID=2031514508322140995#" id="gotop">
+   <i class="fa fa-angle-up"></i>
+    </a>
+
+  <header><h1>PWAConf_pratice</h1></header>
+
+    <h1 id = "title">
+    <center>
+      <img src="https://i.imgur.com/N2Rpd0U.gif">Yanting's BLog
+      <img src="https://i.imgur.com/N2Rpd0U.gif">
+    </center>
+  </h1>
+
+
+    <marquee style="margin:0px;opacity:0.75;" scrollamount="10"  bgcolor="#C4E1FF" noshade width="100%">🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐</marquee>
+
+    <embed  src="https://drive.google.com/file/d/1LPZSVbUuEdpIJjS1cx2JWcF_MUN9P0lO/preview?usp=sharing" width ="100%" height="50" autostart = true>
+
+
+    <div style="margin:50px;height:300px;width:20%;float:left; opacity:0.75;">
+      <img src="https://i.imgur.com/58NBljs.jpg" width="300"  class="picture">
+    </div>
+
+    <div style="margin:40px;height:300px;width:30%;float:left;">
+      <h2>
+        <DL class = "word">
+          <DT>
+            自我介紹XD
+            <p>
+              <ul>
+                <li>姓名 : 陳嬿婷  </li>
+                <li>生日 : 0223 </li>
+                <li>興趣 : 轉魔術方塊 </li>
+                <li>Facebook : <a href="https://www.facebook.com/yanting0223/"><body link="#0099ff">嬿婷</a></li>
+                <li>Instagram :  <a href="https://www.instagram.com/yanting0223/?hl=zh-tw">嬿婷</a></li>
+                <li>最近想做的事 : 回家🏡</li>
+              </ul> 
+            </p>
+          </DT>
+        </DL>
+      </h2>
+    </div>    
+
+    <div style="margin:30px;height:1000sspx;width:30%;float:right;" class="word1">
+      <TABLE style = "margin:10px; opacity:0.75; " BORDER=5 BORDERCOLOR="#ffff7d"BGCOLOR=#B8B8FF >
+        <TR>
+          <TD>
+            <h2>無聊的調查 </h2>
+              <FORM>
+              姓名：<INPUT TYPE="TEXT" NAME="NAME" SIZE="20">
+              </FORM>
+              <FORM>
+                性別：
+                <INPUT TYPE="RADIO" NAME="SEX" VALUE="BOY"> 男 
+                <INPUT TYPE="RADIO" NAME="SEX" VALUE="GIRL"> 女 
+                <INPUT TYPE="RADIO" NAME="SEX" VALUE="OTHER"> 不公開 
+              </FORM>
+              <FORM>
+                喜好：
+                <INPUT TYPE="CHECKBOX" NAME="SEX" VALUE="MOVIE">電影
+                <INPUT TYPE="CHECKBOX" NAME="SEX" VALUE="BOOK">看書
+                <INPUT TYPE="CHECKBOX" NAME="SEX" VALUE="OTHER">
+                其他 
+              </FORM>
+              <FORM>
+                您喜歡看書嗎？：
+                <SELECT NAME="LIKE">
+                  <OPTION VALUE="非常喜歡">非常喜歡
+                  <OPTION VALUE="還算喜歡">還算喜歡
+                  <OPTION VALUE="不太喜歡">不太喜歡
+                  <OPTION VALUE="非常討厭">非常討厭
+                  <OPTION VALUE="其他">其他
+                </SELECT>
+              </FORM> 
+              <FORM>
+                不喜歡蔬菜？：
+                <SELECT NAME="LIKE">
+                  <OPTION VALUE="苦瓜">苦瓜
+                  <OPTION VALUE="青椒">青椒
+                  <OPTION VALUE="紅蘿蔔">紅蘿蔔
+                  <OPTION VALUE="其他">其他
+                </SELECT>
+              </FORM> 
+              <FORM>
+                請按下按鈕：<INPUT TYPE="BUTTON" NAME="OK" VALUE="我同意">
+              </FORM>
+              <FORM>
+                <INPUT TYPE="SUBMIT" VALUE="送出資料"><a href="https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwj2obOq99nsAhVdy4sBHVnRB_gQPAgI"></a></INPUT>
+                <INPUT TYPE="RESET" VALUE="重新填寫">
+              </FORM>
+            </p>
+          </TD>
+        </TR> 
+      </TABLE>
+    </div>  
+    <hr color="#C4E1FF" size="10" width="100%" align="center">
+    <div style="height:300px;width:30%;float:left;" class="word1" >
+      <button3 style = "width: 100;">👉👉👉CLICK ME👈👈👈</button>
+      <p>   </p>
+      <p1 class = "word" style = "margin:100px">我喜歡的卡通</p1>
+      <ul1 class = "word1">
+        <li>烏龍派出所</li>
+        <li>蠟筆小新</li>
+        <li>多拉A夢</li>
+      </ul1>
+    </div>
+    <div style="height:300px;width:30%;float:left;" class="word1" >
+      <button1 style = "width: 100;">👉👉👉CLICK ME👈👈👈</button>
+      <p>   </p>
+      <p2 class = "word" style = "margin:100px">我喜歡的主題</p2>
+      <ul2 class = "word1" >
+        <li>米奇</li>
+        <li>蠟筆小新</li>
+        <li>小熊維尼</li>
+      </ul2>
+    </div>
+    <div style="height:300px;width:30%;float:left;" class="word1" >
+      <button2 style = "width: 100;">👉👉👉CLICK ME👈👈👈</button>
+      <p>   </p>
+      <p3 class = "word" style = "margin:100px">我喜歡的手機</p3>
+      <ul3 class = "word1">
+        <li>蘋果</li>
+        <li>ਸੇਬ</li>
+        <li>ఆపిల్</li>
+      </ul3>
+    </div>
+    <div style="height:1000sspx;width:30%;float:left;"> 
+      <form action="/formprocess.php" method="post">
+      <p class="word1">Comments:</p>
+        <p><textarea name="comments" rows="3" cols="50" class="word1">可以留言給我但我看不到XDDD</textarea></p>
+        <p style="float:right;"><input type="submit" value="送出資料"></p>
+
+    </form>
+    </div>
+    <div style="height:1000sspx;width:50%;float:right;">
+      <font color="gray" ><p>圖片來源</font></p></font>
+          <font color="gray">
+            <ul>
+              <li>http://classic-album.udn.com/j3388004/photo/9627940</li>
+              <li>https://blog.xuite.net/wanwanjudy27/happy/29546050</li>
+            </ul>
+          </font>
+      <font color="gray" ><p>音樂來源</font></p></font>
+          <font color="gray">
+            <ul>
+              <li>https://www.youtube.com/watch?v=9V68Qn6LtY0</li>
+            </ul>
+          </font>
+      <font color="gray" ><p>PWA參考來源</font></p></font>
+          <font color="gray">
+            <ul>
+              <li>https://vaadin.com/learn/tutorials/learn-pwa/turn-website-into-a-pwa</li>
+            </ul>
+          </font>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+<style type="text/css">
+  #title{
+    font-size:  50px;
+  }
+  .pe{
+    text-indent: 95px;
+
+  }
+  .word{
+    font-size:30px;
+  }
+  .word1{
+    font-size:25px;
+  }
+  .picture{
+    border-radius: 50px; 
+  }
+  .word2{
+    font-size:0.5px;
+  }
+  #gotop {
+    position:fixed;
+    z-index:90;
+    right:30px;
+    bottom:31px;
+    display:none;
+    width:50px;
+    height:50px;
+    color:#fff;
+    background:#33b5e5;
+    line-height:50px;
+    border-radius:50%;
+    transition:all 0.5s;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+#gotop :hover{
+    background:#0099CC;
+}
+</style>
+</html>
