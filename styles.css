@@ -56,19 +56,19 @@ nav.fixed {
   left: 0;
   right: 0;
 }*/
-
+/*
 header {
-  /*background: var(--dark-color);*/
+  background: var(--dark-color);
   color: var(--base-color);
-}
+}*/
 
 /*header.fixed {
   margin-bottom: 3em;
 }*/
 
-header h1 {
+/*header h1 {
   font-weight: 400;
-}
+}*/
 
 /*.alert {
   background: var(--warning-color);
